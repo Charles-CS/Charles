@@ -131,15 +131,7 @@ export default function Home() {
           }
         `}</style>
 
-          {/* Scroll indicator */}
-          <div className="w-full flex justify-start items-center mt-6 pl-8 md:pl-16">
-            <div className="flex flex-col items-center gap-1 opacity-40 animate-bounce">
-              <span className="text-[var(--foreground)] text-[10px] tracking-widest uppercase">Scroll</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M12 5v14M5 12l7 7 7-7" />
-              </svg>
-            </div>
-          </div>
+
         </div> {/* end hero wrapper */}
 
         <div className="flex-grow flex flex-col md:flex-row items-center justify-center w-full md:w-9xl md:mt-35 mt-10 md:space-x-50 space-x-0">
