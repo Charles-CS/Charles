@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import dynamic from 'next/dynamic';
+//import dynamic from 'next/dynamic';
 import BlurText from "@/blocks/TextAnimations/BlurText/BlurText";
 import HackathonEntry from "@/app/Awards/HackathonEntry";
 

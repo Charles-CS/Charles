@@ -7,7 +7,7 @@ import React from "react"; // Removed useState
 // Removed GooeyNav import
 import BlurText from "@/blocks/TextAnimations/BlurText/BlurText";
 import TrueFocus from "@/blocks/TextAnimations/TrueFocus/TrueFocus";
-import dynamic from 'next/dynamic';
+//import dynamic from 'next/dynamic';
 import TiltedCard from "@/blocks/Components/TiltedCard/TiltedCard";
 import ExperienceTimeline from '@/components/ExperienceTimeline';
 import SkillTag from '@/components/SkillTag'; // Assuming SkillTag is in components folder
