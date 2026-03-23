@@ -12,6 +12,8 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 
 const Threads = dynamic(() => import("@/blocks/Backgrounds/Threads/Threads"), { ssr: false });
+const Squares = dynamic(() => import("@/blocks/Backgrounds/Squares/Squares"), { ssr: false });
+
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -193,20 +195,37 @@ export default function RootLayout({
         style={{ cursor: 'none' }} // Apply cursor: none globally to the body
       >
         {/* Global Persistent Background Animation */}
-        <div className="fixed inset-0 z-[-1] hidden md:block opacity-50 pointer-events-none">
-          <Threads
-            amplitude={2.5}
-            distance={0}
-            enableMouseInteraction={false}
-          />
-        </div>
-        <div className="fixed inset-0 z-[-1] md:hidden opacity-10 pointer-events-none">
-          <Threads
-            amplitude={2.5}
-            distance={0}
-            enableMouseInteraction={false}
-          />
-        </div>
+        {pathname !== '/Contact' ? (
+          <>
+            <div className="fixed inset-0 z-[-1] hidden md:block opacity-50 pointer-events-none">
+              <Threads
+                amplitude={2.5}
+                distance={0}
+                enableMouseInteraction={false}
+              />
+            </div>
+            <div className="fixed inset-0 z-[-1] md:hidden opacity-10 pointer-events-none">
+              <Threads
+                amplitude={2.5}
+                distance={0}
+                enableMouseInteraction={false}
+              />
+            </div>
+          </>
+        ) : (
+          <div
+            className="fixed inset-0 z-[998] opacity-50 pointer-events-none"
+            style={{ filter: "var(--squares-filter, none)" }}
+          >
+            <Squares
+              speed={0.5}
+              squareSize={50}
+              direction="diagonal"
+              borderColor="#fff"
+              hoverFillColor="#222"
+            />
+          </div>
+        )}
 
         {/* Custom Cursor Dot */}
         <motion.div
@@ -249,7 +268,7 @@ export default function RootLayout({
         />
         {/* Header Section */}
         {/* Adjusted padding for different screen sizes */}
-        <header className="sticky top-0 z-50 flex w-full items-center justify-between px-4 py-2 md:px-8 md:py-3 bg-transparent backdrop-blur-[3px]">
+        <header className={`sticky top-0 flex w-full items-center justify-between px-4 py-2 md:px-8 md:py-3 bg-transparent backdrop-blur-[3px] ${pathname === '/Contact' ? 'z-[999]' : 'z-50'}`}>
           {/* Logo */}
           {/* Using Link for Logo if it navigates to home */}
           {/* Adjusted margin for different screen sizes */}

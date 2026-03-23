@@ -89,7 +89,7 @@ export default function Home() {
       <main className="flex-grow flex flex-col items-center h-full relative pt-20">
 
         {/* Hero section */}
-        <div className="w-full flex flex-col items-center relative pb-32">
+        <div className="w-full flex flex-col items-center relative pb-42">
           <div className="w-full flex justify-center items-center my-4 md:mt-15 text-center font-bold relative px-4 md:px-0">
             <BlurText
               text="Charles Platon"

@@ -6,18 +6,18 @@ import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail } from 'lucide-react';
-import Squares from '@/blocks/Backgrounds/Squares/Squares';
+
 
 // Define social media links
 const socialLinks = [
-    { platform: "GitHub", href: "https://github.com/Charles-CS", Icon: Github },
-    { platform: "LinkedIn", href: null, Icon: Linkedin },
-    { platform: "Gmail", href: "https://mail.google.com/mail/u/1/?pli=1#inbox", Icon: Mail },
+  { platform: "GitHub", href: "https://github.com/Charles-CS", Icon: Github },
+  { platform: "LinkedIn", href: null, Icon: Linkedin },
+  { platform: "Gmail", href: "https://mail.google.com/mail/u/1/?pli=1#inbox", Icon: Mail },
 ];
 
 // Define contact information
 const contactInfo = {
-    email: "Charlesplaton263@gmail.com",
+  email: "Charlesplaton263@gmail.com",
 };
 
 
@@ -53,21 +53,21 @@ export default function Contact() {
   };
 
   return (
-    <main className="fixed inset-0 w-full h-full flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8 z-0 pt-24 md:pt-32 scale-95 origin-center">
+    <main className="fixed inset-0 w-full flex flex-col items-center justify-start overflow-hidden px-4 sm:px-6 lg:px-8 z-10 pt-24 sm:pt-28 md:pt-32 origin-center">
       {/* Section Title */}
-      <div className="text-center mb-6 md:mb-8">
+      <div className="text-center mb-6 md:mb-10">
         <motion.h1
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold text-center text-[var(--foreground)]"
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-center text-[var(--foreground)]"
         >
           Get In Touch
         </motion.h1>
       </div>
 
       {/* Contact Content Container */}
-      <div className="w-full max-w-md md:max-w-3xl lg:max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="w-full max-w-md md:max-w-3xl lg:max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 scale-[0.75] sm:scale-[0.80] md:scale-[0.85] lg:scale-90 origin-top">
 
         {/* Contact Information Section */}
         <div className="flex flex-col space-y-6">
@@ -175,21 +175,10 @@ export default function Contact() {
 
       </div>
 
-      <div 
-        className="absolute top-0 left-0 w-full h-full z-[-5] opacity-25 pointer-events-none"
-        style={{ filter: "var(--squares-filter, none)" }}
-      >
-      <Squares 
-        speed={0.5} 
-        squareSize={50} // Adjust size as needed
-        direction='diagonal' // up, down, left, right, diagonal
-        borderColor='#fff'
-        hoverFillColor='#222'
-        />
-      </div>
+
 
       {/* Optional: Add a footer here if this page doesn't use the global layout footer */}
-       {/* <footer className="mt-16 text-center text-white/50 text-sm">
+      {/* <footer className="mt-16 text-center text-white/50 text-sm">
          <p>&copy; {new Date().getFullYear()} Charles Platon. All rights reserved.</p>
        </footer> */}
     </main>
