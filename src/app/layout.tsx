@@ -197,14 +197,14 @@ export default function RootLayout({
         {/* Global Persistent Background Animation */}
         {pathname !== '/Contact' ? (
           <>
-            <div className="fixed inset-0 z-[-1] hidden md:block opacity-50 pointer-events-none">
+            <div className="absolute top-[25vh] left-0 w-full h-[75vh] z-[-1] hidden md:block opacity-90 pointer-events-none">
               <Threads
                 amplitude={2.5}
                 distance={0}
                 enableMouseInteraction={false}
               />
             </div>
-            <div className="fixed inset-0 z-[-1] md:hidden opacity-10 pointer-events-none">
+            <div className="absolute top-[25vh] left-0 w-full h-[75vh] z-[-1] md:hidden opacity-40 pointer-events-none">
               <Threads
                 amplitude={2.5}
                 distance={0}
