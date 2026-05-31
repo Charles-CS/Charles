@@ -31,7 +31,12 @@ export default function AboutPage() {
   }, [])
 
   const toggleTheme = () => {
+    document.documentElement.classList.add("disable-theme-transition")
+    void document.documentElement.offsetWidth
     setTheme(resolvedTheme === "dark" ? "light" : "dark")
+    window.setTimeout(() => {
+      document.documentElement.classList.remove("disable-theme-transition")
+    }, 0)
   }
 
   const isDark = mounted && resolvedTheme === "dark"

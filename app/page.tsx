@@ -138,7 +138,15 @@ export default function Home() {
   }, [])
 
   const toggleTheme = () => {
+    // Prevent animated transitions while theme class toggles
+    document.documentElement.classList.add("disable-theme-transition")
+    // Force reflow to ensure the class takes effect immediately
+    void document.documentElement.offsetWidth
     setTheme(resolvedTheme === "dark" ? "light" : "dark")
+    // Remove the disabling class on next tick
+    window.setTimeout(() => {
+      document.documentElement.classList.remove("disable-theme-transition")
+    }, 0)
   }
 
   const isDark = mounted && resolvedTheme === "dark"
