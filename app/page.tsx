@@ -324,7 +324,7 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="text-sm text-muted-foreground font-mono">CURRENTLY</div>
                 <div className="space-y-2">
-                  <div className="text-foreground">3rd-Year CS Student</div>
+                  <div className="text-foreground">4th-Year CS Student</div>
                   <div className="text-muted-foreground">@ University of Cabuyao</div>
                   <div className="text-xs text-muted-foreground">2026 - Present</div>
                 </div>
