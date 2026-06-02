@@ -33,7 +33,7 @@ export const projects: Project[] = [
     description:
       "A mobile platform that connects blood requesters with nearby compatible donors, dispatching a motorcycle rider to transport the donor to the hospital — all within minutes.",
     image: "/selected-projects-image/project-1.png",
-    role: "Mobile Developer",
+    role: "Frontend Mobile Developer",
     responsibilities:
       "React Native app development, real-time quest tracking, gamification system, donor matching algorithm, and push notification integration.",
     url: "https://redquest.app/",
