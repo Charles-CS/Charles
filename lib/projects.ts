@@ -146,7 +146,7 @@ export const projects: Project[] = [
       "AI-assisted brand‑impersonation monitoring. GhostNet AI scans the live web for phishing sites, typosquats and cloned profiles, captures verifiable screenshots and HTML snapshots, and produces a machine‑readable draft takedown report",
     image: "/selected-projects-image/project-10.png",
     role: "Frontend Developer",
-    responsibilities: "Frontend development and UI implementation",
+    responsibilities: "UI/UX Designer & Frontend Developer",
     url: "https://ghostnet-ai.vercel.app/",
     tech: [
       "Web Unlocker",
