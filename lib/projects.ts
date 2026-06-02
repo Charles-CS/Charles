@@ -47,7 +47,7 @@ export const projects: Project[] = [
     description:
       "A Secure web platform giving clinicians instant access to patient health data via QR code for emergencies — encrypting complete medical histories into permanent, verifiable digital passports.",
     image: "/selected-projects-image/project-9.png",
-    role: "Full-Stack Developer",
+    role: "Frontend Developer",
     responsibilities:
       "End-to-end PWA architecture, Supabase database integration, QR-based access system, RBAC implementation, UI/UX design, and full-stack deployment.",
     url: "https://lunas.software/",
