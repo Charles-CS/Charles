@@ -117,7 +117,7 @@ export const projects: Project[] = [
     description:
       "An interactive educational game that makes reading fun for children — combining a racing game mechanic with reading comprehension challenges to boost literacy through play.",
     image: "/selected-projects-image/project-6.png",
-    role: "Game Developer",
+    role: "Full-Stack Game Developer",
     responsibilities:
       "Game mechanics design, Unity development, reading comprehension integration, UI/UX design, and educational content curation.",
     url: "https://sonic-path.vercel.app/",
