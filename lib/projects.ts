@@ -61,7 +61,7 @@ export const projects: Project[] = [
     description:
       "App that turns daily chores into a rewards micro-economy with real-time approvals and a savings vault — bridging household responsibilities and financial literacy using behavioral economics.",
     image: "/selected-projects-image/project-8.png",
-    role: "Mobile Developer",
+    role: "UI/UX Designer & Frontend Developer",
     responsibilities:
       "React Native app development, Firebase real-time database, reward system design, parent/child role management, and gamification mechanics.",
     url: "https://toka-platform.vercel.app/",
