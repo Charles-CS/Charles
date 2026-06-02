@@ -19,7 +19,7 @@ export const projects: Project[] = [
     description:
       "AI-powered signature verification system integrating Pix2Pix GAN denoising and a Siamese Capsule Network into a forensic-grade pipeline — anchoring every verification outcome immutably on Ethereum.",
     image: "/selected-projects-image/project-2.png",
-    role: "Lead Full-Stack Engineer",
+    role: "Frontend Developer",
     responsibilities:
       "End-to-end system architecture, YOLOv8 detection pipeline, Pix2Pix & Siamese CapsNet training, Ethereum smart contract integration, IPFS storage, and full-stack deployment.",
     url: "https://kumpirma.vercel.app/",
