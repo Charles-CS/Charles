@@ -131,7 +131,7 @@ export const projects: Project[] = [
     description:
       "A cutting-edge e-commerce platform specializing in tech products — featuring curated collections, detailed product galleries, and a seamless shopping experience.",
     image: "/selected-projects-image/project-7.png",
-    role: "Frontend Developer",
+    role: "UI/UX Designer & Frontend Developer",
     responsibilities:
       "E-commerce UI development, product catalog system, responsive design, and shopping cart functionality.",
     url: "https://charles-cs.github.io/Portfolio/TechTressure.html",
