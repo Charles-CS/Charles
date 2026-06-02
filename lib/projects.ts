@@ -89,7 +89,7 @@ export const projects: Project[] = [
     description:
       "A modern website builder that lets you create top-tier, production-ready website pages in seconds — with intuitive drag-and-drop components and real-time preview.",
     image: "/selected-projects-image/project-4.png",
-    role: "Frontend Developer",
+    role: "Full-Stack Developer",
     responsibilities:
       "Component library development, drag-and-drop interface, real-time preview engine, dark theme system, and template management.",
     url: "https://lumina-website-builder.vercel.app/",
