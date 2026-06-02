@@ -103,7 +103,7 @@ export const projects: Project[] = [
     description:
       "A short first-person horror experience made with Unreal Engine 5 — immersing players in an abandoned hospital filled with atmospheric tension, environmental storytelling, and spine-chilling encounters.",
     image: "/selected-projects-image/project-5.png",
-    role: "Game Developer",
+    role: "Full-Stack Game Developer",
     responsibilities:
       "Level design, Unreal Engine 5 development, environmental storytelling, lighting and atmosphere design, and gameplay scripting.",
     url: "https://charles-cs.github.io/Portfolio/The%20Lost%20Hospital.html",
